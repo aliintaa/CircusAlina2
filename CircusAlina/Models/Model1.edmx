@@ -110,7 +110,7 @@
           <Property Name="TourID" Type="int" />
           <Property Name="ShowID" Type="int" />
         </EntityType>
-        <Association Name="FK__Sales__TicketID__5812160E">
+        <Association Name="FK__Sales__TicketID__36B12243">
           <End Role="Tickets" Type="Self.Tickets" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
@@ -124,7 +124,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ShowActs__ActID__5165187F">
+        <Association Name="FK__ShowActs__ActID__37A5467C">
           <End Role="Acts" Type="Self.Acts" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -138,7 +138,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ShowActs__ShowID__5070F446">
+        <Association Name="FK__ShowActs__ShowID__38996AB5">
           <End Role="Shows" Type="Self.Shows" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -152,7 +152,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ShowInven__ItemI__6383C8BA">
+        <Association Name="FK__ShowInven__ItemI__398D8EEE">
           <End Role="Inventory" Type="Self.Inventory" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -166,7 +166,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ShowInven__ShowI__628FA481">
+        <Association Name="FK__ShowInven__ShowI__3A81B327">
           <End Role="Shows" Type="Self.Shows" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -180,7 +180,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Tickets__ShowID__5441852A">
+        <Association Name="FK__Tickets__ShowID__3B75D760">
           <End Role="Shows" Type="Self.Shows" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
@@ -194,7 +194,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TourShows__ShowI__5DCAEF64">
+        <Association Name="FK__TourShows__ShowI__3C69FB99">
           <End Role="Shows" Type="Self.Shows" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -208,7 +208,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TourShows__TourI__5CD6CB2B">
+        <Association Name="FK__TourShows__TourI__3D5E1FD2">
           <End Role="Tours" Type="Self.Tours" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -234,35 +234,35 @@
           <EntitySet Name="Tickets" EntityType="Self.Tickets" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tours" EntityType="Self.Tours" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TourShows" EntityType="Self.TourShows" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__Sales__TicketID__5812160E" Association="Self.FK__Sales__TicketID__5812160E">
+          <AssociationSet Name="FK__Sales__TicketID__36B12243" Association="Self.FK__Sales__TicketID__36B12243">
             <End Role="Tickets" EntitySet="Tickets" />
             <End Role="Sales" EntitySet="Sales" />
           </AssociationSet>
-          <AssociationSet Name="FK__ShowActs__ActID__5165187F" Association="Self.FK__ShowActs__ActID__5165187F">
+          <AssociationSet Name="FK__ShowActs__ActID__37A5467C" Association="Self.FK__ShowActs__ActID__37A5467C">
             <End Role="Acts" EntitySet="Acts" />
             <End Role="ShowActs" EntitySet="ShowActs" />
           </AssociationSet>
-          <AssociationSet Name="FK__ShowActs__ShowID__5070F446" Association="Self.FK__ShowActs__ShowID__5070F446">
+          <AssociationSet Name="FK__ShowActs__ShowID__38996AB5" Association="Self.FK__ShowActs__ShowID__38996AB5">
             <End Role="Shows" EntitySet="Shows" />
             <End Role="ShowActs" EntitySet="ShowActs" />
           </AssociationSet>
-          <AssociationSet Name="FK__ShowInven__ItemI__6383C8BA" Association="Self.FK__ShowInven__ItemI__6383C8BA">
+          <AssociationSet Name="FK__ShowInven__ItemI__398D8EEE" Association="Self.FK__ShowInven__ItemI__398D8EEE">
             <End Role="Inventory" EntitySet="Inventory" />
             <End Role="ShowInventory" EntitySet="ShowInventory" />
           </AssociationSet>
-          <AssociationSet Name="FK__ShowInven__ShowI__628FA481" Association="Self.FK__ShowInven__ShowI__628FA481">
+          <AssociationSet Name="FK__ShowInven__ShowI__3A81B327" Association="Self.FK__ShowInven__ShowI__3A81B327">
             <End Role="Shows" EntitySet="Shows" />
             <End Role="ShowInventory" EntitySet="ShowInventory" />
           </AssociationSet>
-          <AssociationSet Name="FK__Tickets__ShowID__5441852A" Association="Self.FK__Tickets__ShowID__5441852A">
+          <AssociationSet Name="FK__Tickets__ShowID__3B75D760" Association="Self.FK__Tickets__ShowID__3B75D760">
             <End Role="Shows" EntitySet="Shows" />
             <End Role="Tickets" EntitySet="Tickets" />
           </AssociationSet>
-          <AssociationSet Name="FK__TourShows__ShowI__5DCAEF64" Association="Self.FK__TourShows__ShowI__5DCAEF64">
+          <AssociationSet Name="FK__TourShows__ShowI__3C69FB99" Association="Self.FK__TourShows__ShowI__3C69FB99">
             <End Role="Shows" EntitySet="Shows" />
             <End Role="TourShows" EntitySet="TourShows" />
           </AssociationSet>
-          <AssociationSet Name="FK__TourShows__TourI__5CD6CB2B" Association="Self.FK__TourShows__TourI__5CD6CB2B">
+          <AssociationSet Name="FK__TourShows__TourI__3D5E1FD2" Association="Self.FK__TourShows__TourI__3D5E1FD2">
             <End Role="Tours" EntitySet="Tours" />
             <End Role="TourShows" EntitySet="TourShows" />
           </AssociationSet>
@@ -280,7 +280,7 @@
           <Property Name="ActName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Duration" Type="Int32" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="ShowActs" Relationship="Self.FK__ShowActs__ActID__5165187F" FromRole="Acts" ToRole="ShowActs" />
+          <NavigationProperty Name="ShowActs" Relationship="Self.FK__ShowActs__ActID__37A5467C" FromRole="Acts" ToRole="ShowActs" />
         </EntityType>
         <EntityType Name="Employees">
           <Key>
@@ -303,7 +303,7 @@
           <Property Name="ItemName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Quantity" Type="Int32" Nullable="false" />
           <Property Name="LastUpdated" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="ShowInventory" Relationship="Self.FK__ShowInven__ItemI__6383C8BA" FromRole="Inventory" ToRole="ShowInventory" />
+          <NavigationProperty Name="ShowInventory" Relationship="Self.FK__ShowInven__ItemI__398D8EEE" FromRole="Inventory" ToRole="ShowInventory" />
         </EntityType>
         <EntityType Name="Sales">
           <Key>
@@ -314,7 +314,7 @@
           <Property Name="SaleDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="PaymentMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="CustomerName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Tickets" Relationship="Self.FK__Sales__TicketID__5812160E" FromRole="Sales" ToRole="Tickets" />
+          <NavigationProperty Name="Tickets" Relationship="Self.FK__Sales__TicketID__36B12243" FromRole="Sales" ToRole="Tickets" />
         </EntityType>
         <EntityType Name="ShowActs">
           <Key>
@@ -323,8 +323,8 @@
           <Property Name="ShowActID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ShowID" Type="Int32" />
           <Property Name="ActID" Type="Int32" />
-          <NavigationProperty Name="Acts" Relationship="Self.FK__ShowActs__ActID__5165187F" FromRole="ShowActs" ToRole="Acts" />
-          <NavigationProperty Name="Shows" Relationship="Self.FK__ShowActs__ShowID__5070F446" FromRole="ShowActs" ToRole="Shows" />
+          <NavigationProperty Name="Acts" Relationship="Self.FK__ShowActs__ActID__37A5467C" FromRole="ShowActs" ToRole="Acts" />
+          <NavigationProperty Name="Shows" Relationship="Self.FK__ShowActs__ShowID__38996AB5" FromRole="ShowActs" ToRole="Shows" />
         </EntityType>
         <EntityType Name="ShowInventory">
           <Key>
@@ -334,8 +334,8 @@
           <Property Name="ShowID" Type="Int32" />
           <Property Name="ItemID" Type="Int32" />
           <Property Name="QuantityUsed" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Inventory" Relationship="Self.FK__ShowInven__ItemI__6383C8BA" FromRole="ShowInventory" ToRole="Inventory" />
-          <NavigationProperty Name="Shows" Relationship="Self.FK__ShowInven__ShowI__628FA481" FromRole="ShowInventory" ToRole="Shows" />
+          <NavigationProperty Name="Inventory" Relationship="Self.FK__ShowInven__ItemI__398D8EEE" FromRole="ShowInventory" ToRole="Inventory" />
+          <NavigationProperty Name="Shows" Relationship="Self.FK__ShowInven__ShowI__3A81B327" FromRole="ShowInventory" ToRole="Shows" />
         </EntityType>
         <EntityType Name="Shows">
           <Key>
@@ -346,10 +346,10 @@
           <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="Time" Type="Time" Nullable="false" Precision="7" />
           <Property Name="Location" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="ShowActs" Relationship="Self.FK__ShowActs__ShowID__5070F446" FromRole="Shows" ToRole="ShowActs" />
-          <NavigationProperty Name="ShowInventory" Relationship="Self.FK__ShowInven__ShowI__628FA481" FromRole="Shows" ToRole="ShowInventory" />
-          <NavigationProperty Name="Tickets" Relationship="Self.FK__Tickets__ShowID__5441852A" FromRole="Shows" ToRole="Tickets" />
-          <NavigationProperty Name="TourShows" Relationship="Self.FK__TourShows__ShowI__5DCAEF64" FromRole="Shows" ToRole="TourShows" />
+          <NavigationProperty Name="ShowActs" Relationship="Self.FK__ShowActs__ShowID__38996AB5" FromRole="Shows" ToRole="ShowActs" />
+          <NavigationProperty Name="ShowInventory" Relationship="Self.FK__ShowInven__ShowI__3A81B327" FromRole="Shows" ToRole="ShowInventory" />
+          <NavigationProperty Name="Tickets" Relationship="Self.FK__Tickets__ShowID__3B75D760" FromRole="Shows" ToRole="Tickets" />
+          <NavigationProperty Name="TourShows" Relationship="Self.FK__TourShows__ShowI__3C69FB99" FromRole="Shows" ToRole="TourShows" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -370,8 +370,8 @@
           <Property Name="Price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="SeatNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Sales" Relationship="Self.FK__Sales__TicketID__5812160E" FromRole="Tickets" ToRole="Sales" />
-          <NavigationProperty Name="Shows" Relationship="Self.FK__Tickets__ShowID__5441852A" FromRole="Tickets" ToRole="Shows" />
+          <NavigationProperty Name="Sales" Relationship="Self.FK__Sales__TicketID__36B12243" FromRole="Tickets" ToRole="Sales" />
+          <NavigationProperty Name="Shows" Relationship="Self.FK__Tickets__ShowID__3B75D760" FromRole="Tickets" ToRole="Shows" />
         </EntityType>
         <EntityType Name="Tours">
           <Key>
@@ -381,7 +381,7 @@
           <Property Name="Destination" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="TourShows" Relationship="Self.FK__TourShows__TourI__5CD6CB2B" FromRole="Tours" ToRole="TourShows" />
+          <NavigationProperty Name="TourShows" Relationship="Self.FK__TourShows__TourI__3D5E1FD2" FromRole="Tours" ToRole="TourShows" />
         </EntityType>
         <EntityType Name="TourShows">
           <Key>
@@ -390,10 +390,10 @@
           <Property Name="TourShowID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TourID" Type="Int32" />
           <Property Name="ShowID" Type="Int32" />
-          <NavigationProperty Name="Shows" Relationship="Self.FK__TourShows__ShowI__5DCAEF64" FromRole="TourShows" ToRole="Shows" />
-          <NavigationProperty Name="Tours" Relationship="Self.FK__TourShows__TourI__5CD6CB2B" FromRole="TourShows" ToRole="Tours" />
+          <NavigationProperty Name="Shows" Relationship="Self.FK__TourShows__ShowI__3C69FB99" FromRole="TourShows" ToRole="Shows" />
+          <NavigationProperty Name="Tours" Relationship="Self.FK__TourShows__TourI__3D5E1FD2" FromRole="TourShows" ToRole="Tours" />
         </EntityType>
-        <Association Name="FK__ShowActs__ActID__5165187F">
+        <Association Name="FK__ShowActs__ActID__37A5467C">
           <End Role="Acts" Type="Self.Acts" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -407,7 +407,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ShowInven__ItemI__6383C8BA">
+        <Association Name="FK__ShowInven__ItemI__398D8EEE">
           <End Role="Inventory" Type="Self.Inventory" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -421,7 +421,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Sales__TicketID__5812160E">
+        <Association Name="FK__Sales__TicketID__36B12243">
           <End Role="Tickets" Type="Self.Tickets" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
@@ -435,7 +435,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ShowActs__ShowID__5070F446">
+        <Association Name="FK__ShowActs__ShowID__38996AB5">
           <End Role="Shows" Type="Self.Shows" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -449,7 +449,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ShowInven__ShowI__628FA481">
+        <Association Name="FK__ShowInven__ShowI__3A81B327">
           <End Role="Shows" Type="Self.Shows" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -463,7 +463,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Tickets__ShowID__5441852A">
+        <Association Name="FK__Tickets__ShowID__3B75D760">
           <End Role="Shows" Type="Self.Shows" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
@@ -477,7 +477,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TourShows__ShowI__5DCAEF64">
+        <Association Name="FK__TourShows__ShowI__3C69FB99">
           <End Role="Shows" Type="Self.Shows" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -491,7 +491,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TourShows__TourI__5CD6CB2B">
+        <Association Name="FK__TourShows__TourI__3D5E1FD2">
           <End Role="Tours" Type="Self.Tours" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -505,7 +505,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CircusAlinaTahEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CircusAlinaTahEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Acts" EntityType="Self.Acts" />
           <EntitySet Name="Employees" EntityType="Self.Employees" />
           <EntitySet Name="Inventory" EntityType="Self.Inventory" />
@@ -517,35 +517,35 @@
           <EntitySet Name="Tickets" EntityType="Self.Tickets" />
           <EntitySet Name="Tours" EntityType="Self.Tours" />
           <EntitySet Name="TourShows" EntityType="Self.TourShows" />
-          <AssociationSet Name="FK__ShowActs__ActID__5165187F" Association="Self.FK__ShowActs__ActID__5165187F">
+          <AssociationSet Name="FK__ShowActs__ActID__37A5467C" Association="Self.FK__ShowActs__ActID__37A5467C">
             <End Role="Acts" EntitySet="Acts" />
             <End Role="ShowActs" EntitySet="ShowActs" />
           </AssociationSet>
-          <AssociationSet Name="FK__ShowInven__ItemI__6383C8BA" Association="Self.FK__ShowInven__ItemI__6383C8BA">
+          <AssociationSet Name="FK__ShowInven__ItemI__398D8EEE" Association="Self.FK__ShowInven__ItemI__398D8EEE">
             <End Role="Inventory" EntitySet="Inventory" />
             <End Role="ShowInventory" EntitySet="ShowInventory" />
           </AssociationSet>
-          <AssociationSet Name="FK__Sales__TicketID__5812160E" Association="Self.FK__Sales__TicketID__5812160E">
+          <AssociationSet Name="FK__Sales__TicketID__36B12243" Association="Self.FK__Sales__TicketID__36B12243">
             <End Role="Tickets" EntitySet="Tickets" />
             <End Role="Sales" EntitySet="Sales" />
           </AssociationSet>
-          <AssociationSet Name="FK__ShowActs__ShowID__5070F446" Association="Self.FK__ShowActs__ShowID__5070F446">
+          <AssociationSet Name="FK__ShowActs__ShowID__38996AB5" Association="Self.FK__ShowActs__ShowID__38996AB5">
             <End Role="Shows" EntitySet="Shows" />
             <End Role="ShowActs" EntitySet="ShowActs" />
           </AssociationSet>
-          <AssociationSet Name="FK__ShowInven__ShowI__628FA481" Association="Self.FK__ShowInven__ShowI__628FA481">
+          <AssociationSet Name="FK__ShowInven__ShowI__3A81B327" Association="Self.FK__ShowInven__ShowI__3A81B327">
             <End Role="Shows" EntitySet="Shows" />
             <End Role="ShowInventory" EntitySet="ShowInventory" />
           </AssociationSet>
-          <AssociationSet Name="FK__Tickets__ShowID__5441852A" Association="Self.FK__Tickets__ShowID__5441852A">
+          <AssociationSet Name="FK__Tickets__ShowID__3B75D760" Association="Self.FK__Tickets__ShowID__3B75D760">
             <End Role="Shows" EntitySet="Shows" />
             <End Role="Tickets" EntitySet="Tickets" />
           </AssociationSet>
-          <AssociationSet Name="FK__TourShows__ShowI__5DCAEF64" Association="Self.FK__TourShows__ShowI__5DCAEF64">
+          <AssociationSet Name="FK__TourShows__ShowI__3C69FB99" Association="Self.FK__TourShows__ShowI__3C69FB99">
             <End Role="Shows" EntitySet="Shows" />
             <End Role="TourShows" EntitySet="TourShows" />
           </AssociationSet>
-          <AssociationSet Name="FK__TourShows__TourI__5CD6CB2B" Association="Self.FK__TourShows__TourI__5CD6CB2B">
+          <AssociationSet Name="FK__TourShows__TourI__3D5E1FD2" Association="Self.FK__TourShows__TourI__3D5E1FD2">
             <End Role="Tours" EntitySet="Tours" />
             <End Role="TourShows" EntitySet="TourShows" />
           </AssociationSet>
@@ -555,7 +555,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище CircusAlinaTahModelContainer" CdmEntityContainer="CircusAlinaTahEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище CircusAlinaTahModelContainer" CdmEntityContainer="CircusAlinaTahEntities1">
           <EntitySetMapping Name="Acts">
             <EntityTypeMapping TypeName="CircusAlinaTahModel.Acts">
               <MappingFragment StoreEntitySet="Acts">
