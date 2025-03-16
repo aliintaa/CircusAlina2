@@ -1,0 +1,16 @@
+﻿<Window x:Class="CircusAlina.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Circus" Height="450" Width="800">
+
+    <Grid>
+        <Menu x:Name="MainMenu" Visibility="Collapsed">
+            <MenuItem Header="Управление персоналом" Click="EmployeeManagement_Click"/>
+            <MenuItem Header="Управление репертуаром" Click="RepertoireManagement_Click"/>
+            <MenuItem Header="Продажа билетов" Click="TicketSales_Click"/>
+            <MenuItem Header="Отчетность" Click="Reports_Click"/>
+            <MenuItem Header="Управление инвентарем" Click="InventoryManagement_Click"/>
+        </Menu>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

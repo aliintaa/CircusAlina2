@@ -1,0 +1,35 @@
+﻿<Page x:Class="CircusAlina.Pages.AddEditManagement"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CircusAlina.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Добавить/Редактировать шоу">
+
+    <Grid Margin="10">
+        <StackPanel>
+            <Label Content="Название шоу:"/>
+            <TextBox x:Name="ShowNameTextBox" Margin="0,0,0,10"/>
+
+            <Label Content="Дата:"/>
+            <DatePicker x:Name="DatePickerShow" Margin="0,0,0,10"/>
+
+            <Label Content="Время:"/>
+            <TextBox x:Name="TimeTextBox" Margin="0,0,0,10">ЧЧ:ММ</TextBox>
+
+            <Label Content="Местоположение:"/>
+            <TextBox x:Name="LocationTextBox" Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Сохранить" Click="OkButton_Click"  Margin="5" 
+                    Width="100" Height="30" Background="#4CAF50" Foreground="White"
+                    BorderBrush="#388E3C" BorderThickness="1" FontWeight="Bold"/>
+                <Button Content="Отмена" Click="CancelButton_Click" Margin="5" 
+                    Width="100" Height="30" Background="#F44336" Foreground="White"
+                    BorderBrush="#D32F2F" BorderThickness="1" FontWeight="Bold"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

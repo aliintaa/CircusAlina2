@@ -1,0 +1,69 @@
+﻿<Page x:Class="CircusAlina.Pages.TicketSales"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Продажи билетов">
+
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Проданные билеты -->
+        <DataGrid x:Name="SalesDataGrid" AutoGenerateColumns="False" 
+              CanUserAddRows="False" SelectionMode="Single"
+              Margin="0,0,10,10" Grid.Column="0" Grid.Row="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID продажи" Binding="{Binding SaleID}" />
+                <DataGridTextColumn Header="Шоу" Binding="{Binding ShowName}" />
+                <DataGridTextColumn Header="Место" Binding="{Binding SeatNumber}" />
+                <DataGridTextColumn Header="Цена" Binding="{Binding Price}" />
+                <DataGridTextColumn Header="Дата продажи" Binding="{Binding SaleDate}" />
+                <DataGridTextColumn Header="Покупатель" Binding="{Binding CustomerName}" />
+                <DataGridTextColumn Header="Оплата" Binding="{Binding PaymentMethod}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Форма продажи -->
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="5" VerticalAlignment="Top">
+            <TextBlock Text="Выберите шоу" FontWeight="Bold"/>
+            <ComboBox x:Name="ShowComboBox" Width="200" Margin="0,0,0,10" SelectionChanged="ShowComboBox_SelectionChanged"/>
+
+            <TextBlock Text="Выберите билет" FontWeight="Bold"/>
+            <ComboBox x:Name="TicketComboBox" Width="200" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Имя покупателя" FontWeight="Bold"/>
+            <TextBox x:Name="CustomerNameTextBox" Width="200" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Способ оплаты" FontWeight="Bold"/>
+            <ComboBox x:Name="PaymentMethodComboBox" Width="200" Margin="0,0,0,10">
+                <ComboBoxItem Content="Карта" IsSelected="True"/>
+                <ComboBoxItem Content="Наличные"/>
+            </ComboBox>
+
+            <Button Content="Продать билет" Click="SellTicketButton_Click"
+                Width="120" Height="30" Background="#4CAF50" Foreground="White"
+                BorderBrush="#388E3C" BorderThickness="1" FontWeight="Bold"/>
+        </StackPanel>
+
+        <!-- Список доступных билетов -->
+        <DataGrid x:Name="AvailableTicketsDataGrid" AutoGenerateColumns="True" 
+                           Margin="0,10,0,0" Grid.Row="1" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID билета" Binding="{Binding TicketID}" />
+                <DataGridTextColumn Header="Шоу" Binding="{Binding ShowName}" />
+                <DataGridTextColumn Header="Место" Binding="{Binding SeatNumber}" />
+                <DataGridTextColumn Header="Цена" Binding="{Binding Price}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
