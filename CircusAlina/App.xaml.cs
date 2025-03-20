@@ -14,6 +14,6 @@ namespace CircusAlina
     /// </summary>
     public partial class App : Application
     {
-        public static CircusAlinaTahEntities1 db = new CircusAlinaTahEntities1();
+        public static CircusAlina.Models.CircusAlinaTahEntities2 db = new CircusAlinaTahEntities2();
     }
 }

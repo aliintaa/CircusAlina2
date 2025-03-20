@@ -4,13 +4,15 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CircusAlina.Pages"
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Reports">
 
     <Grid Margin="20">
         <StackPanel>
-            <TextBlock Text="Отчеты по продажам" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock Text="Отчеты по продажам" 
+                       FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
 
             <ComboBox x:Name="ReportTypeComboBox" Width="300" Margin="0,0,0,20">
                 <ComboBoxItem Content="Отчет по продажам билетов"/>
@@ -18,15 +20,28 @@
                 <ComboBoxItem Content="Отчет по доходам"/>
             </ComboBox>
 
-            <Button Content="Сгенерировать отчет" Margin="5" 
+            <!-- Кнопки для генерации и скачивания отчёта -->
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Сгенерировать отчет" Margin="5" 
                         Width="200" Height="35" Background="#4CAF50" 
-                        Foreground="White" FontWeight="Bold" Click="GenerateReportButton_Click"/>
+                        Foreground="White" FontWeight="Bold"
+                        Click="GenerateReportButton_Click"/>
 
-            <TextBlock Text="Результаты отчета:" FontSize="18" FontWeight="Bold" Margin="0,20,0,10"/>
+                <Button Content="Скачать отчет" Margin="5" 
+                        Width="200" Height="35" Background="#2196F3" 
+                        Foreground="White" FontWeight="Bold"
+                        Click="DownloadReportButton_Click"/>
+            </StackPanel>
+
+            <TextBlock Text="Результаты отчета:" FontSize="18" FontWeight="Bold" 
+                       Margin="0,20,0,10"/>
             <DataGrid x:Name="ReportsDataGrid" AutoGenerateColumns="True" 
                       CanUserAddRows="False" 
                       IsReadOnly="True" 
                       Margin="5"/>
+
+            <TextBlock Text="График:" FontSize="18" FontWeight="Bold" Margin="0,20,0,10"/>
+            <lvc:CartesianChart x:Name="ReportChart" Height="300"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -13,10 +13,10 @@ namespace CircusAlina.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CircusAlinaTahEntities1 : DbContext
+    public partial class CircusAlinaTahEntities2 : DbContext
     {
-        public CircusAlinaTahEntities1()
-            : base("name=CircusAlinaTahEntities1")
+        public CircusAlinaTahEntities2()
+            : base("name=CircusAlinaTahEntities2")
         {
         }
     

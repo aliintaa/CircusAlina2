@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1ae69ec6e4fa45b6b0e8f4b2c8a6e161" Name="Diagram1">
+      <Diagram DiagramId="ea12109031d24b939b9735d7b4e90a58" Name="Diagram1">
         <EntityTypeShape EntityType="CircusAlinaTahModel.Acts" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CircusAlinaTahModel.Employees" Width="1.5" PointX="5.75" PointY="1.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CircusAlinaTahModel.Inventory" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
@@ -16,14 +16,14 @@
         <EntityTypeShape EntityType="CircusAlinaTahModel.Tickets" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
         <EntityTypeShape EntityType="CircusAlinaTahModel.Tours" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CircusAlinaTahModel.TourShows" Width="1.5" PointX="6" PointY="6.75" IsExpanded="true" />
-        <AssociationConnector Association="CircusAlinaTahModel.FK__ShowActs__ActID__37A5467C" ManuallyRouted="false" />
-        <AssociationConnector Association="CircusAlinaTahModel.FK__ShowInven__ItemI__398D8EEE" ManuallyRouted="false" />
-        <AssociationConnector Association="CircusAlinaTahModel.FK__Sales__TicketID__36B12243" ManuallyRouted="false" />
-        <AssociationConnector Association="CircusAlinaTahModel.FK__ShowActs__ShowID__38996AB5" ManuallyRouted="false" />
-        <AssociationConnector Association="CircusAlinaTahModel.FK__ShowInven__ShowI__3A81B327" ManuallyRouted="false" />
-        <AssociationConnector Association="CircusAlinaTahModel.FK__Tickets__ShowID__3B75D760" ManuallyRouted="false" />
-        <AssociationConnector Association="CircusAlinaTahModel.FK__TourShows__ShowI__3C69FB99" ManuallyRouted="false" />
-        <AssociationConnector Association="CircusAlinaTahModel.FK__TourShows__TourI__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="CircusAlinaTahModel.FK__ShowActs__ActID__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="CircusAlinaTahModel.FK__ShowInven__ItemI__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="CircusAlinaTahModel.FK__Sales__TicketID__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="CircusAlinaTahModel.FK__ShowActs__ShowID__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="CircusAlinaTahModel.FK__ShowInven__ShowI__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="CircusAlinaTahModel.FK__Tickets__ShowID__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="CircusAlinaTahModel.FK__TourShows__ShowI__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="CircusAlinaTahModel.FK__TourShows__TourI__5070F446" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
